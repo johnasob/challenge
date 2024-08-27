@@ -1,17 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenges del desencriptador inador</title>
-</head>
-<body>
-    <!-- Cabecera de la pagina -->
-    <head>Challenges de one oracle</head>
-    <body>
-        <!--  -->
-        <div></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenges del desencriptador inador</title>
+        <!-- Importar CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="body_pagina">
+        <!-- Logo Alura -->
+        <div class="logo_alura">
+            <img src="assents/logo.png" alt="logo alura latam">
+        </div>
+
+        <main>
+            <!-- Zona de ingreso de texto -->
+            <div class="zona_entrada">
+                <div class="entrada_area">
+                    <!-- Área del texto de -->
+                    <div class="entrada">
+                        <div class="entrada_area_texto">
+                            <textarea class="texto_entrada" id="texto_entrada"
+                                placeholder="Ingrese un texto aquí"></textarea>
+                        </div>
+                    </div>
+                    <!-- Área de botones encriptar y desencriptar -->
+                    <div class="area_btn">
+                        <div class="text_informativo">
+                            <img src="./assents/icono-info.svg"
+                                alt="icono de información">
+                            <span>Solo letras minúsculas y sin acento</span>
+                        </div>
+                        <div class="main_btns">
+                            <button class="btn_encriptar"
+                                id="btn_encriptar">Encriptar</button>
+                            <button class="btn_desencriptar"
+                                id="btn_desencriptar">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Zona resultado de la encriptación o desencriptación -->
+            <div class="no_resultados_area">
+                <!-- Área imagen y resultado -->
+                <div class="no_resultados_contain">
+                    <div class="zona_imagen_resultados">
+                        <img src="assents/muneco.png"
+                            alt="imagen respuesta a ningun mensaje encontrado">
+                    </div>
+                    <div class="no_resultado_text">
+                        <h3>Ningún mensaje fue encontrado</h3>
+                        <p>Ingrese el texto que desees encriptar o
+                            desencriptar</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="resultados_area">
+                <!-- Área imagen y resultado -->
+                <div class="resultados_contain">
+                    <div class="zona_imagen_resultados">
+                        <p class="text-resultados" id="resultado"></p>
+                    </div>
+                    <div class="btn_copiar_area">
+                        <button class="btn_copiar"
+                            id="btn_copiar">copiar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Importar el JavaScript -->
+        <script src="scripts.js"></script>
     </body>
-    <footer></footer>
-</body>
 </html>
