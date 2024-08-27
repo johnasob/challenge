@@ -92,7 +92,7 @@
 }
 @media (max-width: 375px) {
     .entrada_area{
-        padding: 15% 2% 2% 2%;
+        padding: 20% 2% 2% 0%;
     }
 }
 .entrada_area_texto textarea{
@@ -120,6 +120,13 @@ span {
     flex-direction: row;
     justify-content: center;
     gap: 24px;
+}
+@media (max-width: 375px) {
+    .main_btns{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 .btn_encriptar,
 .btn_desencriptar,
@@ -150,13 +157,13 @@ span {
     .no_resultados_area{
         width: 100%;
         height: 40%;
-        padding:2%;
+        padding:0%;
     }
 }
 @media (max-width: 375px) {
     .no_resultados_area{
         width: 100%;
-        height: 20%;
+        height: 18%;
         padding:2%;
     }
     .resultados_area{
